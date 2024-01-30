@@ -1,0 +1,22 @@
+Cross-Validation Scores: [0.78375    0.770625   0.788125   0.7775     0.77798624]
+Mean Cross-Validation Score: 0.7795972482801751
+
+Confusion Matrix for Ring_merged Dataset:
+[[904 229]
+ [216 651]]
+Classification error:  22.25
+
+Classification Report for Ring_merged Dataset:
+              precision    recall  f1-score   support
+
+           0       0.81      0.80      0.80      1133
+           1       0.74      0.75      0.75       867
+
+    accuracy                           0.78      2000
+   macro avg       0.77      0.77      0.77      2000
+weighted avg       0.78      0.78      0.78      2000
+
+Mean Squared Separable Error: 0.2225
+R-squared Separable: 0.09397329359031947
+Accuracy: 77.75
+ROC AUC: 0.7743733909118394

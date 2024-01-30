@@ -1,0 +1,22 @@
+Cross-Validation Scores: [0.008752178400754929, 0.005742210429161787, 0.00597801199182868, 0.007224623113870621, 0.016102036461234093]
+Mean Cross-Validation Score: 0.008759812079370021
+
+Confusion Matrix for Ring_separable Dataset:
+[[994   8]
+ [  4 994]]
+Classification error:  0.6
+
+Classification Report for Ring_separable Dataset:
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      1002
+           1       0.99      1.00      0.99       998
+
+    accuracy                           0.99      2000
+   macro avg       0.99      0.99      0.99      2000
+weighted avg       0.99      0.99      0.99      2000
+
+Mean Squared Separable Error: 0.006
+R-squared Separable: 0.975999903999616
+Accuracy: 99.19999837875366
+ROC AUC: 0.9940039760159041
