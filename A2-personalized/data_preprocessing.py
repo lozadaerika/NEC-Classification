@@ -4,15 +4,13 @@ import pandas as pd
 # read the csv file
 name='A2-personalized/raisin'
 
-df= pd.read_csv(name+'.csv',sep=';')
+df= pd.read_csv(name+'.csv',sep=';',header=None)
 print(df.head())
 print(df.describe())
 
 df_processed = pd.DataFrame()
 
-# Replace 'unknown' with the mode in each column
 for column in df.columns:
-    df_processed[column] = df[column].replace('unknown', df[column].mode()[0])
     is_yes_no = df_processed[column].isin(['Kecimen', 'Besni']).all()
     if is_yes_no:
         df_processed[column] = df_processed[column].replace({'Kecimen': 1, 'Besni': 0}).astype(int)
