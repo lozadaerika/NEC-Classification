@@ -5,7 +5,7 @@ from sklearn.discriminant_analysis import StandardScaler
 
 name='A2-ring/A2-ring-separable'
 
-df= pd.read_csv(name+'.txt',sep='\t')
+df= pd.read_csv(name+'.txt',sep='\t',header=None)
 
 print(df.describe())
 print(df.head())

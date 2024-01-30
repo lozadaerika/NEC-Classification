@@ -7,7 +7,7 @@ from sklearn.discriminant_analysis import StandardScaler
 # read the csv file
 name='A2-bank/bank-additional'
 
-df= pd.read_csv(name+'.csv',sep=';')
+df= pd.read_csv(name+'.csv',sep=';',header=None)
 print(df.head())
 
 print(df.describe())
@@ -16,8 +16,7 @@ df_processed = pd.DataFrame()
 
 # Replace 'unknown' with the mode in each column
 for column in df.columns:
-    mode_value = df[column].mode()[0]
-    df_processed[column] = df[column].replace('unknown', mode_value)
+    df_processed[column] = df[column].replace('unknown', df[column].mode()[0])
     is_yes_no = df_processed[column].isin(['yes', 'no']).all()
     if is_yes_no:
         df_processed[column] = df_processed[column].replace({'yes': 1, 'no': 0}).astype(int)
@@ -26,9 +25,7 @@ for column in df.columns:
         if not is_numeric:
             unique=df_processed[column].unique()
             unique={k:v for v,k in enumerate(unique)}
-            print(unique)
             df_processed[column]=df_processed[column].map(unique)   
-        print(column, is_numeric,is_yes_no)
 
 df_processed=df_processed.iloc[1:]
 
