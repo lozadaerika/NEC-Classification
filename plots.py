@@ -3,18 +3,19 @@ import matplotlib.pyplot as plt
 class Plots_Class:
 
     def plot_pca(self,X_pca,y_train,title="",filename=""):
+        plt.clf()
         plt.figure()
         plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y_train, cmap='coolwarm', marker='o')
         plt.xlabel('Principal Component 1')
         plt.ylabel('Principal Component 2')
         plt.title(title)
-        plt.show()
         if filename!="":
             plt.savefig(filename+"-pca.png")
         else:
             plt.show()
 
     def plot_roc(self,fpr,tpr,roc_auc,filename=""):
+        plt.clf()
         plt.figure(figsize=(8, 8))
         plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (AUC = {:.2f})'.format(roc_auc))
         plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
@@ -28,6 +29,7 @@ class Plots_Class:
             plt.show()
 
     def plot_conf_matrix(self,conf_matrix,filename=""):
+        plt.clf()
         fig, ax = plt.subplots()
         cax = ax.matshow(conf_matrix, cmap=plt.cm.Blues)
         for i in range(2):
@@ -45,6 +47,7 @@ class Plots_Class:
             plt.show()
 
     def printPlots(self,df_plot,label,filename=""):
+            plt.clf()
             # Visualize data
             plt.scatter(
                 df_plot[df_plot.iloc[:, -1] == 0].iloc[:, 0],
@@ -70,6 +73,7 @@ class Plots_Class:
                 plt.show()
         
     def printPredictionPlots(self,X_test1,y_test1,y_pred1,label1,filename=""):
+        plt.clf()
         # Visualize data
         plt.scatter(
             X_test1[y_test1 == 0][:, 0],
