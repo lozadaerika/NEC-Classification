@@ -83,10 +83,6 @@ r2 = r2_score(y_test_binary, y_pred_binary)
 print("Mean Squared Separable Error:", mse)
 print("R-squared Separable:", r2)
 
-# Print the coefficients and intercept
-print("Coefficients Separable: ", model.coef_)
-print("Intercept Separable:", model.intercept_)
-
 # Accuracy score (discrete values)
 accuracy = accuracy_score(y_test_binary, y_pred_binary)
 print("Accuracy:", accuracy)
@@ -100,6 +96,10 @@ plotsClass.plot_roc(fpr,tpr,roc_auc,fileName)
 
 with open(fileName+"-output.txt", 'w') as file:      
     sys.stdout = file  # Redirect stdout
+    # Print the coefficients and intercept
+    print("Coefficients Separable: ", model.coef_)
+    print("Intercept Separable:", model.intercept_)
+
     print("Cross-Validation Scores:", cross_val_scores)
     print("Mean Cross-Validation Score:", mean_cv_score)
     print(f"\nConfusion Matrix for {label} Dataset:")

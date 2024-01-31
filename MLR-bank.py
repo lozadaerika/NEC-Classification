@@ -100,6 +100,8 @@ plotsClass.plot_roc(fpr,tpr,roc_auc,fileName)
 
 with open(fileName+"-output.txt", 'w') as file:      
     sys.stdout = file  # Redirect stdout
+    print("Coefficients Separable: ", model.coef_)
+    print("Intercept Separable:", model.intercept_) 
     print("Cross-Validation Scores:", cross_val_scores)
     print("Mean Cross-Validation Score:", mean_cv_score)
     print(f"\nConfusion Matrix for {label} Dataset:")

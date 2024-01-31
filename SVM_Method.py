@@ -29,8 +29,6 @@ class SVM_Class:
         # Make predictions on the test set
         y_pred = svm_classifier.predict(X_test)    
 
-        print(y_pred)
-
         # Confusion matrix
         conf_matrix = confusion_matrix(y_test, y_pred)
         
