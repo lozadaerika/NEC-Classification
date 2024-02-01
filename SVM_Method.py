@@ -51,14 +51,14 @@ class SVM_Class:
             #Classification report
             classif_report=classification_report(y_test, y_pred)
             # Cross-validation 5-fold
-            cross_val_scores = cross_val_score(svm_classifier, X_train, y_train, cv=5)
+            cross_val_scores = cross_val_score(svm_classifier, X_train, y_train, cv=5,scoring='neg_mean_squared_error')
             # Calculate and print the mean cross-validation score
             mean_cv_score = cross_val_scores.mean()
 
             with open(filename+"-output.txt", 'w') as file:      
                 sys.stdout = file  # Redirect stdout
-                print("Cross-Validation Scores:", cross_val_scores)
-                print("Mean Cross-Validation Score:", mean_cv_score)
+                print("Cross-Validation error Scores:", cross_val_scores)
+                print("Mean Cross-Validation error Score:", mean_cv_score)
                 print(f"\nConfusion Matrix for {label} Dataset:")
                 print(conf_matrix)
                 print("Classification error: ", E)

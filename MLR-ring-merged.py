@@ -54,11 +54,11 @@ y_pred_binary = (y_pred > threshold).astype(int)
 y_test_binary = (y_test > threshold).astype(int)
 
 # Cross-validation score 5-fold
-cross_val_scores = cross_val_score(model, X_train, y_train, cv=5) 
+cross_val_scores = cross_val_score(model, X_train, y_train, cv=5,scoring='neg_mean_squared_error') 
 # Display the cross-validation scores
-print("Cross-Validation Scores:",cross_val_scores)
+print("Cross-Validation error Scores:",cross_val_scores)
 mean_cv_score = np.mean(cross_val_scores)
-print(f"Mean Cross-Validation Score: {mean_cv_score:.4f}")
+print(f"Mean Cross-Validation error Score: {mean_cv_score:.4f}")
 
 plotsClass.printPredictionPlots(X_test,y_test_binary,y_pred_binary,label,fileName)
 
@@ -100,8 +100,8 @@ with open(fileName+"-output.txt", 'w') as file:
     print("Coefficients Separable: ", model.coef_)
     print("Intercept Separable:", model.intercept_)
 
-    print("Cross-Validation Scores:", cross_val_scores)
-    print("Mean Cross-Validation Score:", mean_cv_score)
+    print("Cross-Validation error Scores:", cross_val_scores)
+    print("Mean Cross-Validation errorScore:", mean_cv_score)
     print(f"\nConfusion Matrix for {label} Dataset:")
     print(conf_matrix)
     print("Classification error: ", E)
