@@ -1,7 +1,7 @@
 Coefficients Separable:  [0.01429031 0.00557908]
 Intercept Separable: 0.4523939429969828
-Cross-Validation Scores: [ 0.00011746  0.00012589  0.00042953 -0.00028144 -0.00097857]
-Mean Cross-Validation Score: -0.00011742716807165987
+Cross-Validation error Scores: [-0.24666477 -0.24851519 -0.24693725 -0.24676318 -0.24928538]
+Mean Cross-Validation errorScore: -0.2476331548515324
 
 Confusion Matrix for Ring_merged Dataset:
 [[1133    0]
