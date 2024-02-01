@@ -1,22 +1,22 @@
-Cross-Validation Scores: [0.19102251529693604, 0.18145406246185303, 0.18099065124988556, 0.1750296652317047, 0.1725807636976242]
-Mean Cross-Validation Score: 0.1802155315876007
+Cross-Validation loss Scores: [0.1755799800157547, 0.1684594750404358, 0.17013587057590485, 0.1696489453315735, 0.16692039370536804]
+Mean Cross-Validation loss Score: 0.17014893293380737
 
 Confusion Matrix for Bank Dataset:
-[[700  27]
- [ 50  47]]
+[[695  32]
+ [ 45  52]]
 Classification error:  9.344660194174757
 
 Classification Report for Bank Dataset:
               precision    recall  f1-score   support
 
-           0       0.93      0.96      0.95       727
-           1       0.64      0.48      0.55        97
+           0       0.94      0.96      0.95       727
+           1       0.62      0.54      0.57        97
 
     accuracy                           0.91       824
-   macro avg       0.78      0.72      0.75       824
+   macro avg       0.78      0.75      0.76       824
 weighted avg       0.90      0.91      0.90       824
 
 Mean Squared Separable Error: 0.09344660194174757
 R-squared Separable: 0.10027084899105199
 Accuracy: 90.89806079864502
-ROC AUC: 0.7236985776882826
+ROC AUC: 0.7460329840184914

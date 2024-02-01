@@ -116,8 +116,8 @@ class BP_Class:
 
             with open(filename+"-output.txt", 'w') as file:      
                 sys.stdout = file  # Redirect stdout
-                print("Cross-Validation Scores:", loss_per_fold)
-                print("Mean Cross-Validation Score:", np.mean(loss_per_fold))
+                print("Cross-Validation loss Scores:", loss_per_fold)
+                print("Mean Cross-Validation loss Score:", np.mean(loss_per_fold))
                 print(f"\nConfusion Matrix for {label} Dataset:")
                 print(conf_matrix)
                 print("Classification error: ", E)
