@@ -4,21 +4,21 @@ Cross-Validation error Scores: [-0.24921929 -0.25015128 -0.24955371 -0.24925597 
 Mean Cross-Validation error Score: -0.2496924405841578
 
 Confusion Matrix for Ring_separable Dataset:
-[[1030   21]
- [ 949    0]]
-Classification error:  48.5
+[[   0 1051]
+ [   0  949]]
+Classification error:  52.55
 
 Classification Report for Ring_separable Dataset:
               precision    recall  f1-score   support
 
-           0       0.52      0.98      0.68      1051
-           1       0.00      0.00      0.00       949
+           0       0.00      0.00      0.00      1051
+           1       0.47      1.00      0.64       949
 
-    accuracy                           0.52      2000
-   macro avg       0.26      0.49      0.34      2000
-weighted avg       0.27      0.52      0.36      2000
+    accuracy                           0.47      2000
+   macro avg       0.24      0.50      0.32      2000
+weighted avg       0.23      0.47      0.31      2000
 
-Mean Squared Separable Error: 0.485
-R-squared Separable: -0.9450590987157594
-Accuracy: 51.5
-ROC AUC: 0.4900095147478592
+Mean Squared Separable Error: 0.5255
+R-squared Separable: -1.1074815595363536
+Accuracy: 47.449999999999996
+ROC AUC: 0.5
