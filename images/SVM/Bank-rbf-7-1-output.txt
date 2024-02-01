@@ -1,0 +1,22 @@
+Cross-Validation error Scores: [-0.08952959 -0.08649469 -0.08662614 -0.10638298 -0.08662614]
+Mean Cross-Validation error Score: -0.09113190751391764
+
+Confusion Matrix for Bank Dataset:
+[[731  11]
+ [ 55  27]]
+Classification error:  8.009708737864077
+
+Classification Report for Bank Dataset:
+              precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96       742
+           1       0.71      0.33      0.45        82
+
+    accuracy                           0.92       824
+   macro avg       0.82      0.66      0.70       824
+weighted avg       0.91      0.92      0.91       824
+
+Mean Squared Separable Error: 0.08009708737864078
+R-squared Separable: 0.10617316415751776
+Accuracy: 91.99029126213593
+ROC AUC: 0.6572217474196306
