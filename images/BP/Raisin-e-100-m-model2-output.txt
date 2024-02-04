@@ -1,0 +1,22 @@
+Cross-Validation loss Scores: [0.2703506052494049, 0.25445160269737244, 0.25143566727638245, 0.25948092341423035, 0.240987166762352]
+Mean Cross-Validation loss Score: 0.2553411930799484
+
+Confusion Matrix for Raisin Dataset:
+[[71 11]
+ [ 7 91]]
+Classification error:  10.0
+
+Classification Report for Raisin Dataset:
+              precision    recall  f1-score   support
+
+           0       0.91      0.87      0.89        82
+           1       0.89      0.93      0.91        98
+
+    accuracy                           0.90       180
+   macro avg       0.90      0.90      0.90       180
+weighted avg       0.90      0.90      0.90       180
+
+Mean Squared Separable Error: 0.1
+R-squared Separable: 0.5968143354902937
+Accuracy: 89.4444465637207
+ROC AUC: 0.8972125435540069
