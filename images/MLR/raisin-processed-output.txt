@@ -1,25 +1,25 @@
-Coefficients Separable:  [ 4.14059541e+12  7.20065317e+11  7.16823506e+11  7.16823506e+11
-  1.90692139e+00 -3.14715387e+12 -3.14715387e+12]
-Intercept Separable: -0.010917780779860567
-Cross-Validation error Scores: [-0.23076846 -0.21623884 -0.26055735 -0.54084156 -0.25127132]
-Mean Cross-Validation error Score: -0.2999355039858267
+Coefficients Separable:  [-8.27100688  1.74044024  0.2103906  -0.48748531 12.39806385 -0.03041768
+ -8.02761087]
+Intercept Separable: 1.7066256216708324
+Cross-Validation error Scores: [-0.09287639 -0.15206574 -0.13026391 -0.11537497 -0.13795199]
+Mean Cross-Validation error Score: -0.12570660155193894
 
 Confusion Matrix for Raisin Dataset:
-[[91  0]
- [37 52]]
-Classification error:  20.555555555555557
+[[80 13]
+ [13 74]]
+Classification error:  14.444444444444445
 
 Classification Report for Raisin Dataset:
               precision    recall  f1-score   support
 
-           0       0.71      1.00      0.83        91
-           1       1.00      0.58      0.74        89
+           0       0.86      0.86      0.86        93
+           1       0.85      0.85      0.85        87
 
-    accuracy                           0.79       180
-   macro avg       0.86      0.79      0.78       180
-weighted avg       0.85      0.79      0.78       180
+    accuracy                           0.86       180
+   macro avg       0.86      0.86      0.86       180
+weighted avg       0.86      0.86      0.86       180
 
-Mean Squared Separable Error: 0.20555555555555555
-R-squared Separable: 0.17767625632794182
-Accuracy: 79.44444444444444
-ROC AUC: 0.7921348314606742
+Mean Squared Separable Error: 0.14444444444444443
+R-squared Separable: 0.421579532814238
+Accuracy: 85.55555555555556
+ROC AUC: 0.8553948832035596
