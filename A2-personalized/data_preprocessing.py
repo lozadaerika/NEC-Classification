@@ -1,4 +1,3 @@
-# read th information of a CSV and load into a dataframe
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 

@@ -1,7 +1,4 @@
-# read th information of a CSV and load into a dataframe
 import pandas as pd
-from sklearn.discriminant_analysis import StandardScaler
-
 
 name='A2-ring/A2-ring-separable'
 

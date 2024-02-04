@@ -1,7 +1,4 @@
-# read th information of a CSV and load into a dataframe
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.discriminant_analysis import StandardScaler
 
 # read the csv file
@@ -14,7 +11,7 @@ print(df.describe())
 
 df_processed = pd.DataFrame()
 
-# Replace 'unknown' with the mode in each column
+# Preprocessing
 for column in df.columns:
     df_processed[column] = df[column].replace('unknown', df[column].mode()[0])
     categorical = df_processed[column].isin(['yes', 'no']).all()
